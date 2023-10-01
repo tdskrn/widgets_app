@@ -1,9 +1,20 @@
-import '../../presentation/screens/buttons/button_screen.dart';
-import '../../presentation/screens/cards/cards_screen.dart';
+import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
-class AppRoutes {
-  static final appRoutes = {
-    '/botoes': (context) => const ButtonsScreen(),
-    '/cards': (context) => const CardsScreen(),
-  };
-}
+final appRouter = GoRouter(initialLocation: '/', routes: [
+  GoRoute(
+    name: HomeScreen.name,
+    path: '/',
+    builder: (context, state) => const HomeScreen(),
+  ),
+  GoRoute(
+    name: ButtonsScreen.name,
+    path: '/botoes',
+    builder: (context, state) => const ButtonsScreen(),
+  ),
+  GoRoute(
+    name: CardsScreen.name,
+    path: '/cards',
+    builder: (context, state) => const CardsScreen(),
+  ),
+]);
