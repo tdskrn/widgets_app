@@ -57,4 +57,10 @@ const appMenuItems = <MenuItem>[
     link: '/app-tutorial-screen',
     icon: Icons.accessible_rounded,
   ),
+  MenuItem(
+    title: "Infinite Scroll",
+    subTitle: "Infinite Scroll",
+    link: '/infinite-scroll-screen',
+    icon: Icons.insert_drive_file,
+  ),
 ];
