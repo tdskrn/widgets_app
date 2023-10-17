@@ -63,4 +63,16 @@ const appMenuItems = <MenuItem>[
     link: '/infinite-scroll-screen',
     icon: Icons.insert_drive_file,
   ),
+  MenuItem(
+    title: "Counter Screen",
+    subTitle: "Screen for counter",
+    link: '/counter-screen',
+    icon: Icons.countertops,
+  ),
+  MenuItem(
+    title: "Theme Changer",
+    subTitle: "Screen for counter",
+    link: '/theme-changer-screen',
+    icon: Icons.countertops,
+  ),
 ];
